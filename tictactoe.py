@@ -71,5 +71,9 @@ button8.grid(row=3, column=1)
 button9 = Button(tk,text=' ', font=('Times 26 bold'), height = 3, width =8, borderwidth=4, command=lambda:checker(button9))
 button9.grid(row=3, column=2)
 
+button10 = Button(tk,text='Clear', font=('Times 26 bold'), height = 1, width =8, command=lambda:clear())
+button10.grid(row=4, columnspan=3)
+
+
 
 tk.mainloop()
