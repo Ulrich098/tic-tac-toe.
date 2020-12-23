@@ -16,7 +16,10 @@ def checker(buttons):
 	elif buttons['text'] == ' ' and click == False:
 		buttons['text'] = 'O'
 		click = True
-		
+                        
+	elif check() == True:
+	    tkinter.messagebox.showinfo('Warming',' Hey! This Button Already Pressed')
+	
 	
                 
 	if (button1['text'] == 'X' and button2['text'] == 'X' and button3['text'] == 'X' or
@@ -39,7 +42,18 @@ def checker(buttons):
 		button2['text'] == 'O' and button5['text'] == 'O' and button8['text'] == 'O' or
 		button3['text'] == 'O' and button6['text'] == 'O' and button9['text'] == 'O') :
 	    tkinter.messagebox.showinfo('Winner O','You have just won a game')
-
+	    
+def check():
+        if (button1['text'] == 'X' or button1['text'] == 'O' or
+                button2['text'] == 'X' or button2['text'] == 'O' or
+                button3['text'] == 'X' or button3['text'] == 'O' or
+                button4['text'] == 'X' or button4['text'] == 'O' or
+                button5['text'] == 'X' or button5['text'] == 'O' or
+                button6['text'] == 'X' or button6['text'] == 'O' or
+                button7['text'] == 'X' or button7['text'] == 'O' or
+                button8['text'] == 'X' or button8['text'] == 'O' or
+                button9['text'] == 'X' or button9['text'] == 'O') :
+            return True
 
 def clear():
         button1['text'] = ' '
