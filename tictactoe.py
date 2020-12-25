@@ -42,6 +42,12 @@ def checker(buttons):
 		button2['text'] == 'O' and button5['text'] == 'O' and button8['text'] == 'O' or
 		button3['text'] == 'O' and button6['text'] == 'O' and button9['text'] == 'O') :
 	    tkinter.messagebox.showinfo('Winner O','You have just won a game')
+
+	if (button1['text'] != ' ' and button2['text'] != ' ' and button3['text'] != ' ' and
+		button4['text'] != ' ' and button5['text'] != ' ' and button6['text'] != ' ' and
+		button7['text'] != ' ' and button8['text'] != ' ' and button9['text'] != ' ') :
+	    tkinter.messagebox.showinfo('Draw','No one won!')
+	    clear()
 	    
 def check():
         if (button1['text'] == 'X' or button1['text'] == 'O' or
